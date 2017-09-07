@@ -132,11 +132,10 @@
                         android:id="@+id/phone_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:enabled="false"
-                        android:focusable="false"
+
                         android:hint="Мобильный"
                         android:inputType="phone"
-                        android:text="34354635743624"
+
                         android:textColor="@color/black"
                         android:textColorHint="@color/grey"/>
                 </android.support.design.widget.TextInputLayout>
@@ -186,11 +185,10 @@
                         android:id="@+id/email_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:enabled="false"
-                        android:focusable="false"
+
                         android:hint="E-mail"
                         android:inputType="textEmailAddress"
-                        android:text="myMail"
+
                         android:textColor="@color/black"
                         android:textColorHint="@color/grey"/>
                 </android.support.design.widget.TextInputLayout>
