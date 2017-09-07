@@ -41,7 +41,7 @@
             </LinearLayout>
 
             <View
-                android:layout_width="2dp"
+                android:layout_width="@dimen/line_size"
                 android:layout_height="62dp"
                 android:layout_gravity="center"
                 android:background="@color/grey_light"/>
@@ -72,7 +72,7 @@
             </LinearLayout>
 
             <View
-                android:layout_width="2dp"
+                android:layout_width="@dimen/line_size"
                 android:layout_height="62dp"
                 android:layout_gravity="center"
                 android:background="@color/grey_light"/>
