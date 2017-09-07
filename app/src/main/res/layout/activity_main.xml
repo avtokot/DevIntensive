@@ -27,9 +27,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="5"
+                    android:text="@string/txt_5"
                     android:textColor="@color/white"
-                    android:textSize="25sp"/>
+                    android:textSize="@dimen/size_txt_25"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     android:gravity="center"
                     android:text="@string/rating_txt"
                     android:textColor="@color/white"
-                    android:textSize="15sp"/>
+                    android:textSize="@dimen/size_txt_15"/>
             </LinearLayout>
 
             <View
@@ -57,9 +57,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="5"
+                    android:text="@string/txt_5"
                     android:textColor="@color/white"
-                    android:textSize="25sp"/>
+                    android:textSize="@dimen/size_txt_25"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                     android:gravity="center"
                     android:text="@string/code_line_txt"
                     android:textColor="@color/white"
-                    android:textSize="15sp"/>
+                    android:textSize="@dimen/size_txt_15"/>
 
             </LinearLayout>
 
@@ -88,9 +88,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="5"
+                    android:text="@string/txt_5"
                     android:textColor="@color/white"
-                    android:textSize="25sp"/>
+                    android:textSize="@dimen/size_txt_25"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                     android:gravity="center"
                     android:text="@string/project_txt"
                     android:textColor="@color/white"
-                    android:textSize="15sp"/>
+                    android:textSize="@dimen/size_txt_15"/>
 
             </LinearLayout>
         </LinearLayout>

@@ -9,4 +9,5 @@
     <string name="project_txt">Проектов</string>
     <string name="code_line_txt">Написано строк кода</string>
     <string name="rating_txt">Рейтинг</string>
+    <string name="txt_5">5</string>
 </resources>
