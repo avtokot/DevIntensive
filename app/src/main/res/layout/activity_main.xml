@@ -298,45 +298,5 @@
         android:layout_marginLeft="@dimen/size_large_72"
         android:background="@color/grey_light"/>
 
-    <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="@dimen/size_small_24"
-            android:layout_height="@dimen/size_small_24"
-            android:layout_marginLeft="@dimen/size_small_24"
-            android:layout_marginTop="@dimen/size_small_24"
-            android:src="@drawable/ic_account_circle_black_24dp"/>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:focusable="false"
-                    android:hint="О себе"
-                    android:inputType="textEmailAddress"
-                    android:text="@string/lorem_ipsun"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/grey"/>
-            </android.support.design.widget.TextInputLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>-->
 
 </LinearLayout>
