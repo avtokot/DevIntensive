@@ -217,7 +217,7 @@
                         android:focusable="false"
                         android:hint="Репозиторий"
                         android:inputType="textEmailAddress"
-                        android:text="github.com/school"/>
+                        android:text="github.com"/>
                 </android.support.design.widget.TextInputLayout>
 
             </LinearLayout>
