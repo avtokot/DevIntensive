@@ -17,8 +17,8 @@
     <dimen name="spacing_larger_80">80dp</dimen>
 
     <!--Text size-->
-    <dimen name="size_txt_15">15sp</dimen>
-    <dimen name="size_txt_25">25sp</dimen>
+    <dimen name="size_txt_14">14sp</dimen>
+    <dimen name="size_txt_24">24sp</dimen>
 
     <!--Size line-->
     <dimen name="line_size_2">2dp</dimen>
