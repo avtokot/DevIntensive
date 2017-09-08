@@ -10,4 +10,6 @@
     <string name="code_line_txt">Написано строк кода</string>
     <string name="rating_txt">Рейтинг</string>
     <string name="txt_5">5</string>
+    <string name="my_profile_txt">Мой профиль</string>
+    <string name="my_group_txt">Команда</string>
 </resources>

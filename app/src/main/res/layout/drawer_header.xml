@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:background="@drawable/header_bg"
+                android:paddingBottom="@dimen/spacing_small_8"
+                android:paddingLeft="@dimen/spacing_normal_16"
+                android:paddingRight="@dimen/spacing_normal_16"
+                android:paddingTop="@dimen/spacing_medial_24">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo_user_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cruz"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_medium_56"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Щиров Константин"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_txt_14"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="avtokot84@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_txt_14"/>
+
+    </LinearLayout>
+</RelativeLayout>
