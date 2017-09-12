@@ -51,7 +51,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 showSnackBar(item.getTitle().toString());
-                item.setChecked(true);
+                item.setChecked(true); // выделение нажатого item
                 mNavigationDrawer.closeDrawer(GravityCompat.START);
                 return false;
             }
@@ -67,7 +67,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     /**
-     * Замена Toast
+     * Замена Toast (альтернатива)
      */
     private void showSnackBar(String message) {
         Snackbar.make(mCoordinatorLayout, message, Snackbar.LENGTH_LONG).show();
