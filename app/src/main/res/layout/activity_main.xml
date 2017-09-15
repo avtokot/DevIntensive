@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:contentScrim="@color/grey"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
                 <ImageView
                     android:id="@+id/user_photo_img"
@@ -200,6 +200,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/email_img"
                         style="@style/user_image_right"
                         android:src="@drawable/ic_send_black_24dp"/>
                 </LinearLayout>
@@ -239,6 +240,7 @@
 
                     <ImageView
                         style="@style/user_image_right"
+                        android:id="@+id/vk_img"
                         android:src="@drawable/ic_eye_24dp"/>
                 </LinearLayout>
 
@@ -279,6 +281,7 @@
 
                     <ImageView
                         style="@style/user_image_right"
+                        android:id="@+id/git_img"
                         android:src="@drawable/ic_eye_24dp"/>
                 </LinearLayout>
 

@@ -1,5 +1,6 @@
 package com.softdesign.devintensive.ui.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
@@ -34,7 +35,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private FloatingActionButton mFloatingActionButton;
     private EditText mUserPhone, mUserEmail, mUserVk, mUserGit, mUserAccount;
     private DataManager mDataManager;
-
 
     private List<EditText> mUserInfoViews;
 
@@ -89,61 +89,70 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                showSnackBar(item.getTitle().toString());
-                item.setChecked(true); // выделение нажатого item
-                mNavigationDrawer.closeDrawer(GravityCompat.START);
+                switch (item.getItemId()) {
+                    case R.id.team_menu:
+                        showSnackBar("Выбрана командная разработка");
+                        break;
+                    case R.id.user_profile_menu:
+                        showSnackBar("Выбран мой профиль");
+                        break;
+                }
+                item.setChecked(true); // метод выделения нажатого item
+                mNavigationDrawer.closeDrawer(GravityCompat.START); // закрытие Drawer
                 return false;
             }
         });
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {  // если нажата кнопка гамбургер
-            mNavigationDrawer.openDrawer(GravityCompat.START); // то открыть навигационую панель
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mNavigationDrawer.openDrawer(GravityCompat.START); // то открыть навигационую панель
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Замена Toast (альтернатива)
-     */
-    private void showSnackBar(String message) {
+
+    private void showSnackBar(String message) {  // замена Toast (альтернатива)
         Snackbar.make(mCoordinatorLayout, message, Snackbar.LENGTH_LONG).show();
-    }
+    } // альтернатива Toast является SnackBar
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
+            case R.id.email_img:
+                //Todo реализовать отправку письма
+                break;
+            case R.id.git_img:
+                //Todo реализовать чтение Git репозитория
+                break;
+            case R.id.vk_img:
+                //Todo реализовать переход на страницу в Vk
+                break;
             case R.id.call_img:
-                /*showProgress();
-                runWithDelay();*/
+                //Todo реализовать вызов звонка
                 break;
             case R.id.fab_edit:
                 if (mCurrentEditMode == 0) {
-                    showSnackBar("режим редактирования включен");
+                    showSnackBar("Режим редактирования включен");
                     changeEditMode(1);
                     mCurrentEditMode = 1;
                 } else {
-                    showSnackBar("режим просмотра включен");
+                    showSnackBar("Режим просмотра включен");
                     changeEditMode(0);
                     mCurrentEditMode = 0;
                 }
                 break;
         }
-    }
-
-   /* private void runWithDelay() {
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //Todo выполняем метод с задержкой в 5 секунд
-               hideProgress();
-            }
-        }, 5000);
-
-    }*/
+    } // обработчик нажатий на view элементы
 
     private void setupToolbar() {
         setSupportActionBar(mToolbar);
@@ -175,14 +184,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 saveUserInfoValue(); // метод для сохранения данных
             }
         }
-    }
+    } // режим редактирования
 
     private void loadUserInfoValue() {
         List<String> userData = mDataManager.getPreferencesManager().loadUserProfileData();
         for (int i = 0; i < userData.size(); i++) {
             mUserInfoViews.get(i).setText(userData.get(i));
         }
-    }
+    } // загрузка данных из SharedPrefences
 
     private void saveUserInfoValue() {
         List<String> userData = new ArrayList<>();
@@ -190,11 +199,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             userData.add(userFieldView.getText().toString());
         }
         mDataManager.getPreferencesManager().saveUserProfileData(userData);
-    }
+    } // сохранение данных в SharedPrefences
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putInt(ConstantManager.EDIT_MODE_KEY, mCurrentEditMode);
         super.onSaveInstanceState(outState);
-    }
+    } // сохранение данных перед пересозданием самой активити
+
+    private void loadPhotoFromGallery() {
+
+    } // загрузка фото с галереи
+
+    private void loadPhotoFromCamera() {
+
+    } // загрузка фото с камеры
 }
