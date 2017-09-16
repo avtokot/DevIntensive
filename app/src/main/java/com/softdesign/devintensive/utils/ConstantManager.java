@@ -10,4 +10,5 @@ public interface ConstantManager {
     String USER_VK_KEY = "USER_VK_KEY";
     String USER_ACCOUNT_KEY = "USER_ACCOUNT_KEY";
     String USER_MAIL_KEY = "USER_MAIL_KEY";
+    int LOAD_PROFILE_PHOTO = 1;
 }

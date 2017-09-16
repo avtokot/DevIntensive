@@ -21,5 +21,6 @@
     <!--Size line-->
     <dimen name="line_size_2">2dp</dimen>
     <dimen name="fab_right_space">8dp</dimen>
+    <dimen name="placeholder_photo_size_90dp">90dp</dimen>
 
 </resources>

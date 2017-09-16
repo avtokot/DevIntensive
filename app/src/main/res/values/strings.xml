@@ -12,4 +12,9 @@
     <string name="txt_5">5</string>
     <string name="my_profile_txt">Мой профиль</string>
     <string name="my_group_txt">Команда</string>
+    <string name="user_profile.placeholder.image">Изменить фотографию профиля</string>
+    <string name="user_profile.dialog.gallery">Загрузить из галереи</string>
+    <string name="user_profile.dialog.camera">Сделать снимок</string>
+    <string name="user_profile.dialog.cancel">Отмена</string>
+    <string name="user_profile.dialog.title">Изменить фотографию профиля</string>
 </resources>
